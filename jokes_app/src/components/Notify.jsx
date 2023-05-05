@@ -4,7 +4,7 @@ const Notify = () => {
   return (
     <>
     <div className="notification">
-        <p>joke bookMarked successfully..........</p>
+        <p>Joke BookMarked Successfully. . . . . .</p>
         <span className="notify_progress"></span>
     </div>
     </>

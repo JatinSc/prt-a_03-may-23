@@ -97,18 +97,20 @@ header {
 
 .main .container .content {
   border: none;
-  width: 400px;
+  width: 500px;
   height: min-content;
-  min-height: 200px;
+  min-height: 250px;
   background-color: aliceblue;
   border-radius: 10px;
   outline: none;
   padding: 10px;
+  margin: 40px 20px 30px 20px;
 }
 
 .main .container .btn {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 10px;
   outline: none;
   border: none;
 }
@@ -358,3 +360,48 @@ background: linear-gradient(90deg, rgba(3,28,102,1) 1%, rgba(0,129,255,0.9164915
     transform: scaleX(1);
   }
 }
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  margin-top: 20px;
+  padding-left: 18px;
+  
+}
+.footer p{
+  font-size: 20px;
+  font-weight: 600;
+  text-align: start;
+  background: linear-gradient(to right, rgb(13, 0, 255), rgb(3, 138, 248));
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  width: 150px;
+
+  border-bottom: 10px solid;
+  border-image-slice: 1;
+  border-width: 3px;
+  border-image-source: linear-gradient(to left, #02f9f1,#0051ff, #000dff);
+ 
+}
+
+.footer a{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  background: linear-gradient(to right, rgb(0, 0, 250), rgb(255, 0, 174));
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+
+  border-bottom: 10px solid;
+  border-image-slice: 1;
+  border-width: 3px;
+  border-image-source: linear-gradient(to left, #0237f9,rgb(255, 0, 149));
+}
+
+

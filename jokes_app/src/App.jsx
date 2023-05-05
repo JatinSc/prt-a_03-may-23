@@ -80,6 +80,10 @@ const App = () => {
               </span>
             </button>
           </div>
+          <div className="footer">
+            <p>Author : Jatin</p>
+            <a href="https://github.com/JatinSc/prt-a_03-may-23/tree/master/jokes_app" target="blank">Source Code ❤️</a>
+          </div>
         </div>
       </div>
       {
