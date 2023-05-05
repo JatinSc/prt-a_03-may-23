@@ -444,14 +444,14 @@ header{
   margin-top: 20px;
 }
   .setup {
-    font-size: 10px;
+    font-size: 15px;
     font-weight: 500;
     text-transform: uppercase;
     color: #087498 !important;
     text-align: center;
   }
   .punchline{
-    font-size: 10px;
+    font-size: 15px;
   }
 
   body {
