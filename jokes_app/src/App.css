@@ -1,0 +1,360 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./assets/Wave-10s-1536px.svg);
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  background: rgb(82, 217, 245);
+  background: linear-gradient(90deg, rgba(82, 217, 245, 0.7792366946778712) 21%, rgba(250, 79, 198, 0.7484243697478992) 82%);
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 10px;
+  padding: 20px 30px;
+  background-color: rgb(171, 221, 244);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  background: rgb(205, 240, 255);
+  background: linear-gradient(0deg, rgba(205, 240, 255, 0.7512254901960784) 49%, rgba(69, 184, 244, 0.7484243697478992) 100%);
+}
+
+.setup {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #087498 !important;
+  text-align: center;
+}
+
+.punchline {
+  text-align: center;
+  color: rgb(8, 143, 227);
+}
+
+/* for bookmark */
+.bxs-bookmarks {
+  color: #0d80ba;
+  font-size: 25px;
+  transition: 0.5s;
+  border: 2px solid #075f8a;
+
+}
+
+.bxs-bookmarks:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #ff0073;
+  border: 2px solid white;
+}
+
+.main .bxs-bookmarks {
+  align-self: end;
+}
+
+.header {
+  text-align: center;
+  font-weight: 600;
+  word-spacing: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  font-size: 20px;
+  padding: 8px;
+  color: #0a6aa5;
+}
+
+header {
+  background: linear-gradient(to right, rgb(255, 21, 157), rgb(3, 93, 248));
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  text-align: center;
+  font-weight: 700;
+  word-spacing: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  font-size: 25px;
+}
+
+.main .container .content {
+  border: none;
+  width: 400px;
+  height: min-content;
+  min-height: 200px;
+  background-color: aliceblue;
+  border-radius: 10px;
+  outline: none;
+  padding: 10px;
+}
+
+.main .container .btn {
+  display: flex;
+  justify-content: space-around;
+  outline: none;
+  border: none;
+}
+
+/* for newJoke button */
+.newJoke {
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: #0f7ccb;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  background: #0f7ccb;
+}
+
+.newJoke,
+.newJoke span {
+  transition: 200ms;
+}
+
+.newJoke .text {
+  font-size: 13px;
+  transform: translateX(8px);
+  color: white;
+  font-weight: bold;
+}
+
+.newJoke .icon {
+  position: absolute;
+  border-left: 1px solid #1ba2c4;
+  transform: translateX(80px);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newJoke .icon {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  width: 40px;
+}
+
+.newJoke:hover {
+  transform: translateY(-5px);
+}
+
+.newJoke:hover .icon {
+  color: #ffffff;
+}
+
+.newJoke:hover .text {
+  color: transparent;
+}
+
+.newJoke:hover .icon {
+  font-size: 25px;
+  border-left: none;
+  transform: translateX(40px);
+}
+
+button:focus {
+  outline: none;
+}
+
+/* for new bookmarks button */
+.bookmark {
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: rgb(255, 0, 166);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  background: #ef207a;
+}
+
+.bookmark,
+.bookmark span {
+  transition: 200ms;
+}
+
+.bookmark .text {
+  font-size: 13px;
+  transform: translateX(8px);
+  color: white;
+  font-weight: bold;
+}
+
+.bookmark .icon {
+  position: absolute;
+  border-left: 1px solid #fb4c4c;
+  transform: translateX(80px);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bookmark .icon {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  width: 40px;
+}
+
+.bookmark:hover {
+  transform: translateY(-5px);
+}
+
+.bookmark:hover .icon {
+  color: #ffffff;
+}
+
+.bookmark:hover .text {
+  color: transparent;
+}
+
+.bookmark:hover .icon {
+  font-size: 25px;
+  border-left: none;
+  transform: translateX(40px);
+}
+
+button:focus {
+  outline: none;
+}
+
+/* for spinner */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.loader__circle {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin: 0 4px;
+  animation: loader_901 0.5s ease-in-out infinite;
+}
+
+.loader__circle:nth-of-type(1) {
+  background-color: #3ca7fe;
+  animation-delay: 0;
+}
+
+.loader__circle:nth-of-type(2) {
+  background-color: #fc49b1;
+  animation-delay: 0.125s;
+}
+
+.loader__circle:nth-of-type(3) {
+  background-color: #3890fc;
+  animation-delay: 0.150s;
+}
+
+.loader__circle:nth-of-type(4) {
+  background-color: #fd1a84;
+  animation-delay: 0.175s;
+}
+
+@keyframes loader_901 {
+  0% {
+    transform: scale(1);
+  }
+
+  20% {
+    transform: scale(1.2);
+  }
+
+  40% {
+    transform: scale(1);
+  }
+}
+
+/* modal styling */
+.bxs-book-bookmark {
+  color: #0a6aa5;
+}
+
+/* table styling */
+thead {
+  background-color: rgb(10, 121, 240);
+  color: white;
+}
+
+tbody {
+  font-size: 15px;
+  background-color: #45a7d8;
+  color: #ffffff;
+}
+
+/* for notification */
+.notification {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  width: 300px;
+  /* width: max-content; */
+  padding: 12px 15px;
+  border-radius: 4px;
+  background: rgb(3,28,102);
+background: linear-gradient(90deg, rgba(3,28,102,1) 1%, rgba(0,129,255,0.9164915966386554) 48%, rgba(255,0,232,0.9024859943977591) 100%);
+  color: #f6f5f9;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(30px);
+  opacity: 0;
+  visibility: hidden;
+  animation: fade-in 4s linear forwards;
+}
+
+.notify_progress {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  width: calc(100% - 10px);
+  height: 3px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background-image: linear-gradient(to right, #539bdb, #ff0073);
+  border-radius: inherit;
+  animation: load 3s 0.25s linear forwards;
+}
+
+@keyframes fade-in {
+  5% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes load {
+  to {
+    transform: scaleX(1);
+  }
+}
