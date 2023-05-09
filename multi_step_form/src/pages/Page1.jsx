@@ -10,6 +10,7 @@ const Page1 = () => {
  
   return (
     <Form>
+      <p><strong>Registration Details :-</strong></p>
       <Row className="mb-4 my-4" >
         <Form.Group as={Col} controlId="formGridFirstName">
           <Form.Label>First Name</Form.Label>

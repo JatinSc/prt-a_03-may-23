@@ -132,7 +132,7 @@ const App = () => {
         </Modal>
         }
         <header>MULTI_STEP_FORM</header>
-        <p id="page">{`Page : ${page}/4`}</p>
+        
 
         <div className="content">
           {page == 1 ? (
@@ -145,7 +145,9 @@ const App = () => {
             <Page4 />
           )}
         </div>
-        <div className="btn">
+        
+      </div><br/>
+      <div className="btn">
           <Button
             disabled={page == 1 ? true : false}
             variant="secondary"
@@ -165,12 +167,12 @@ const App = () => {
             disabled={page < 4 || show ? true : false}
             style={{backgroundColor:"#1DBD06"}}
             type="submit"
-            onClick={() => {setSubmit(true); setPage(1) ; refresh()}}
+            onClick={() => {setSubmit(true); setPage(1) ; refresh() ;setProgress(0)}}
           >
             Submit
           </Button>
         </div>
-      </div><br/>
+      <p id="page">{`Page : ${page}/4`}</p>
       <ProgressBar animated now={progress} />
     </>
   );

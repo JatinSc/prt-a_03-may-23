@@ -6,7 +6,7 @@ import FormContext from "../FormContext/FormContext";
 
 const Page2 = () => {
   const { formData, setFormData } = useContext(FormContext);
-  return (
+  return (<>
     <Form>
       <Row className="mb-3">
         <Form.Group as={Col} controlId="formGridFirstName">
@@ -21,7 +21,7 @@ const Page2 = () => {
 
       <fieldset>
         <Form.Group as={Row} className="mb-3">
-          <Form.Label as="legend" column sm={2}>
+          <Form.Label as="legend" column sm={4}>
             Gender
           </Form.Label>
           <Col sm={10}>
@@ -72,17 +72,6 @@ const Page2 = () => {
         />
       </Form.Group>
 
-      {/* <Form.Group className="mb-3" controlId="formGridPassword">
-        <Form.Label>Address</Form.Label>
-        <Form.Control
-          value={formData.address}
-          type="text"
-          placeholder="enter your address here!"
-          onChange={(e) =>
-            setFormData({ ...formData, address: e.target.value })
-          }
-        />
-      </Form.Group> */}
       <Form.Group
               className="mb-3"
               controlId="exampleForm.ControlTextarea1"
@@ -98,6 +87,7 @@ const Page2 = () => {
               />
             </Form.Group>
     </Form>
+    </>
   );
 };
 
