@@ -5,6 +5,7 @@ const Page4 = () => {
   return (
     <>
   <div className="summary">
+    <p style={{color:"#066C9F",textAlign:"center"}}><strong>Please ReCheck Your Details !!!</strong></p>
     <ul>
     <li>{` First Name : ${formData?.fName}`}</li>
     <li>{`Last Name  : ${formData?.lName}`}</li>

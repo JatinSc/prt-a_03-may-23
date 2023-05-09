@@ -87,7 +87,7 @@ const App = () => {
   })
  }
   return (
-    <>
+    <><header>MULTI_STEP_FORM</header>
       <div className="container">
         {show && (
           
@@ -131,9 +131,6 @@ const App = () => {
           </Modal.Footer>
         </Modal>
         }
-        <header>MULTI_STEP_FORM</header>
-        
-
         <div className="content">
           {page == 1 ? (
             <Page1 />
