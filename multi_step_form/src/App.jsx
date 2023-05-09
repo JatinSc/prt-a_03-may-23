@@ -50,7 +50,7 @@ const App = () => {
         }, 3000);
       } else {
         setPage((previous) => previous + 1);
-        setProgress(75)
+        setProgress(70)
       }
     }
     if (page == 3) {
