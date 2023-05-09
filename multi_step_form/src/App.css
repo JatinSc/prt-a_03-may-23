@@ -13,16 +13,10 @@ body{
    margin: 5px;
 }
 
-@media (max-width: 768px) {
-    .container{
-        width:350px;
-    }
-}
-
 .container{
     border-radius: 20px;
     padding: 10px 20px;
-    width:650px;
+    width:100%;
     min-height: 450px;
     display: flex;
     flex-direction: column;
