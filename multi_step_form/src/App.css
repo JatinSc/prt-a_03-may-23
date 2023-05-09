@@ -16,7 +16,7 @@ body{
 .container{
     border-radius: 20px;
     padding: 10px 20px;
-    width:100%;
+    width:350px;
     min-height: 450px;
     display: flex;
     flex-direction: column;
@@ -50,9 +50,6 @@ header{
 }
 #page{
  align-self: center;
- /* position: absolute;
- left:45px;
- top:55px */
 }
 .summary{
     display: grid;

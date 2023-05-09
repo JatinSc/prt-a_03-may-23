@@ -88,6 +88,7 @@ const App = () => {
  }
   return (
     <><header>MULTI_STEP_FORM</header>
+    <p id="page">{`Page : ${page}/4`}</p>
       <div className="container">
         {show && (
           
@@ -153,6 +154,7 @@ const App = () => {
             Back
           </Button>
           <Button
+          style={{backgroundColor:"#23A9C0"}}
             disabled={page == 4 || show ? true : false}
             onClick={()=> validateForm()}
             variant="primary mx-4"
@@ -169,8 +171,8 @@ const App = () => {
             Submit
           </Button>
         </div>
-      <p id="page">{`Page : ${page}/4`}</p>
-      <ProgressBar animated now={progress} />
+      <br/>
+      <ProgressBar label={`${progress}%`} animated now={progress} />
     </>
   );
 };
