@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="letter-j-icon-png-21774.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo-List App</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      let alertShow = false;
+      setInterval(()=>{
+        document.title = 
+        alertShow ? "Todo-List App by Jatin"
+                  : "Follow for more !";
+
+        alertShow = !alertShow;        
+      },1000)
+    </script>
+  </body>
+</html>

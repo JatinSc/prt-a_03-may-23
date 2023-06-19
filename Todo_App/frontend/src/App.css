@@ -1,0 +1,77 @@
+body{
+  background-color: rgb(241, 121, 69);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  width: 600px;
+  height: min-content;
+  padding: 10px;
+  border: 2px solid rgb(245, 237, 234);
+  border-radius: 10px;
+  background-color: rgb(238, 105, 47);
+}
+
+.task{
+  display: flex;
+  background-color: rgb(242, 132, 78);
+  width: 420px;
+  height: 26px;
+  padding: 3px;
+  border-radius: 5px;
+  color:rgb(83, 33, 8);
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.crud{
+  display: flex;
+  justify-content: space-between;
+  width: 45px;
+  height: 15px;
+  color:rgb(91, 35, 4);
+  padding: 5px 5px ;
+  border: 1px solid rgb(232, 149, 17);
+  background-color: rgb(235, 130, 59);
+}
+#add{
+  color:rgb(252, 93, 1);
+  border-radius: 3px;
+  padding: 5px 20px;
+  border: 1px solid rgb(232, 149, 17);
+  background-color: rgb(241, 182, 64);
+}
+
+#edit:hover,#complete:hover{
+ color: white;
+}
+
+
+
+#add:hover{
+  color:white;
+  background-color: rgb(235, 75, 17);
+  border: 1px solid orangered;
+  box-shadow: 5px 5px 5px rgb(241, 156, 70);
+}
+
+h1{
+color: white;
+}
+#input{
+  color: rgb(119, 46, 4);
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(255, 154, 87);
+  width: 400px;
+  height: 20px;
+  
+}
