@@ -13,7 +13,8 @@ const App = () => {
 
   const getTasks = async () => {
     try {
-      const res = await fetch(`http://127.0.0.1:8000/all`, {
+      //http://127.0.0.1:8000
+      const res = await fetch(`https://todo-backend-hzj2.onrender.com/all`, {
         method: "GET",
       });
       const result = await res.json();
@@ -31,9 +32,10 @@ const App = () => {
 
   const handelAdd = async (event) => {
     event.preventDefault();
+    
 
     try {
-      const res = fetch(`http://127.0.0.1:8000/new`, {
+      const res = fetch(`https://todo-backend-hzj2.onrender.com/new`, {
         method: "POST",
         headers: {
           "content-type": "application/json"
@@ -53,7 +55,7 @@ const App = () => {
   const handelDelete = async (id) => {
 
     try {
-      const res = await fetch(`http://127.0.0.1:8000/delete/${id}`, {
+      const res = await fetch(`https://todo-backend-hzj2.onrender.com/delete/${id}`, {
         method: "DELETE",
       })
 
@@ -71,7 +73,7 @@ const App = () => {
   const handelEdit = async (id) => {
     try {
 
-      const res = await fetch(`http://127.0.0.1:8000/edit/${id}`, {
+      const res = await fetch(`https://todo-backend-hzj2.onrender.com/edit/${id}`, {
         method: "PUT",
         headers: {
           "content-type": "application/json"
