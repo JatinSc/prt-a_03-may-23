@@ -32,7 +32,9 @@ const App = () => {
 
   const handelAdd = async (event) => {
     event.preventDefault();
-    
+    if(!task.task || task.task==" "){
+      return window.alert("empty task can't be added")
+    }
 
     try {
       const res = fetch(`https://todo-backend-hzj2.onrender.com/new`, {
