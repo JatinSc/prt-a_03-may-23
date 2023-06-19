@@ -101,7 +101,7 @@ const App = () => {
     <>
       <div className='container'>
         <h1>ToDo List App</h1>
-        <input id='input' placeholder='Enter your Task......' value={task.task} type='text' onChange={(e) => { setTask({ ...task, task: e.target.value }) }}></input>
+        <input id='input' placeholder='Enter your Task......' value={task.task} type='text'  required="true" onChange={(e) => { setTask({ ...task, task: e.target.value }) }}></input>
         {edit ? <button id='add' onClick={handelAdd}>Add</button> :
           (<button style={{ marginRight: "2px" }} id='add'
             onClick={() => handelEdit(updateId)}>Save</button>)}
